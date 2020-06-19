@@ -1,0 +1,47 @@
+*{
+	background:  #fff;
+
+}
+.log_div{
+	width: 500px;
+	height: 250px;
+	margin: 0px auto;
+	border: 1px solid #000;
+	/*background-color: gray;*/
+	/*background: url("../images/注册.png") ;*/
+	background: url('../images/watercolor-backgrounds-05.jpg');
+
+}
+.log_title{
+	text-align: center;
+	/*background:  url("../images/注册.png");*/
+	background: url('../images/watercolor-backgrounds-05.jpg');
+}
+.input_div{
+	text-align: center;
+	/*background: url("../images/注册.png");*/
+	background: url('../images/watercolor-backgrounds-05.jpg');
+}
+.log_form{
+	/*background: url("../images/注册.png") ;*/
+	background: url('../images/watercolor-backgrounds-05.jpg');
+}
+span{
+	background-color: rgb(179,215,247);
+	font-weight: bold;
+	font-size: 14px;
+}
+#submit{
+	background-color: rgb(179,215,247);
+}
+#go_login{
+	/*background: url("../images/注册.png");*/
+	background: url('../images/watercolor-backgrounds-05.jpg');
+}
+a{
+	background-color: rgb(179,215,247);
+}
+#all{
+	background: url('../images/watercolor-backgrounds-05.jpg');
+	height: 1000px;
+}
