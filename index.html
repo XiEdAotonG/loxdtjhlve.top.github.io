@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="CSS/index.css">
+	<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="js/vue.min.js"></script>
+	</head>
+<body  onload="time()" id="all" 
+oncontextmenu="window.event.returnValue=false" 
+onkeypress="window.event.returnValue=false" 
+onkeydown="window.event.returnValue=false" 
+onkeyup="window.event.returnValue=false" 
+ondragstart="window.event.returnValue=false"
+ onselectstart="event.returnValue=false">
+	<div class="container1">
+		<div id="head">
+			<div id="guide">
+				<div class="gui_left">
+					<img src="images/5-15062FZ937-53.gif" style="float: left;">
+					<img src="images/5-15062F91005-50.gif" style="float: left;">
+					<img src="images/5-15062FZ938-52.gif" style="float: left;">
+					<div id="time_" style="float: left;height: 30px;">
+						<svg height="91">
+							<text id="time" text-anchor="middle" x="50%" y="50%" class="words words-1"></text>
+							<text id="time" text-anchor="middle" x="50%" y="50%" class="words words-2"></text>
+							<text id="time" text-anchor="middle" x="50%" y="50%" class="words words-3"></text>
+							<text id="time" text-anchor="middle" x="50%" y="50%" class="words words-4"></text>
+						</svg>
+					</div>
+					<div style="float: left;"><audio style="height: 60px;background-color:  rgb(253,219,129);" src="images/BIGBANG (빅뱅) - IF YOU.mp3" id="aud"  controls="controls" preload="auto"></audio></div>
+					<img id="more" src="images/5-120605203S1.gif">
+				</div>
+				<div class="daohang"> 
+					<ul> 
+						<li><a href="register.html">注册</a></li> 
+						<li><a href="#center_">防疫知识</a></li> 
+						<li><a href="#beauti_doc">赞美医生</a></li> 
+						<li><a href="#message">预防信息</a></li> 
+						<li><a href="#masks">口罩介绍</a></li> 
+						<li><a href="#virus">病毒介绍</a></li> 
+					</ul> 
+				</div>
+			</div>
+		</div>	
+			
+		<div id="center_">
+			<div id="center_bg">
+			<div>
+			<img src="images/font-image_detail3-178-2-防疫抗疫，从我做起.png" ><img src="images/font-image_detail3-57-0-小知识.png" style="margin-left: 100px;margin-bottom: 0px;"></div>
+				<section class="main_box">
+					<div class="box" id="app">
+						<ul>
+							<li :class="li.class" v-for="li in data">
+								<a :href="li.href" target="_blank">
+									<h3>{{li.name}}</h3>
+									<p>{{li.text}}</p>
+									<img :src="li.src" alt="img">
+								</a>
+							</li>
+							<div style="clear: both"></div>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div id="center_1">
+			<div id="beauti_doc">
+				<img src="images/font-image_detail3-175-0-赞美医生的诗歌.png" style="margin-left: 480px;margin-bottom: 0px;">
+			</div>
+			<div id="center_1top">
+				<img src="images/doctor.jpg" alt="">
+			</div>
+			<div id="text_">
+				<textarea cols="60" rows="39" style="font-weight: bold;font-size: 14px;background:url('images/watercolor-backgrounds-02.jpg');">你的笑容淹没痛苦
+
+指尖轻触的瞬息
+
+我的痛苦
+
+在温柔里平伏
+
+你不离弃的守侯
+
+摒退的忧愁
+
+希望重燃于眼眸
+
+你付出爱
+
+使得灿烂阳光
+
+在每个清晨如期而来
+
+没有羽翼
+
+一袭白衣
+
+你仍是天使
+
+繁星在夜空中闪烁
+
+我寻找属于我的一颗
+
+百花在春风里争艳
+
+我寻找属于我的一朵
+
+呻吟是伴我征程的弦乐
+
+素白紧裹着我的生活
+
+我的青春我的理想
+
+在输液架上悬着在治疗盘中寄托
+
+不要笑我偏狭的生活轻舸
+
+明星闪烁天空才显得深邃广阔
+
+百花争艳春天才显得生机勃勃</textarea>
+			</div>
+		</div>
+		<div id="part3">
+			<div ><img id="message" src="images/font-image_detail3-175-0-预防信息.png" style="margin-left: 590px;margin-bottom: 0px;"></div>
+			<div id="text2">
+				<div  style="float: left; width: 300px;">
+					<span style="font-size: 25px;color: rgb(130,142,201);">传播途径</span>
+					<span style="display: block;line-height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新型冠状病毒主要的传播途径还是呼吸道飞沫传播和接触传播，气溶胶和粪—口等传播途径尚待进一步明确。通过流行病学调查显示，病例多可以追踪到与确诊的病例有过近距离密切接触的情况。<br><br><span style="font-size: 18px;color: rgb(130,142,201);">①直接传播</span><br><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是指患者喷嚏、咳嗽、说话的飞沫，呼出的气体近距离直接吸入导致的感染；<br><br><span style="font-size: 18px;color: rgb(130,142,201);">②气溶胶传播</span><br><br>
+					&nbsp;&nbsp;&nbsp;是指飞沫混合在空气中，形成气溶胶，吸入后导致感染；<br><br><span style="font-size: 18px;color: rgb(130,142,201);">③接触传播</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是指飞沫沉积在物品表面，接触污染手后，再接触口腔、鼻腔、眼睛等黏膜，导致感染。
+					</span><br><br>
+					<span style="font-size: 25px;color: rgb(130,142,201);text-align: center;">易感人群</span><br><br>
+					<span style="display: block;line-height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;各个年龄段的人都可能被感染，被感染的主要是成年人，其中老年人和体弱多病的人似乎更容易被感染。儿童和孕产妇是新型冠状病毒感染的肺炎的易感人群。</span>
+				</div>
+			</div>
+			<div>
+				<hr size="1000" width="1" style="float: left;margin-left: 70px;">
+			</div>
+			<div style="float: right;"><img src="images/创意新冠肺炎预防信息图矢量素材.jpg"></div>
+		</div>
+		<div id="part4">
+			<div><img id="masks" src="images/font-image_detail3-175-0-口罩介绍.png" style="margin-left: 218px;margin-bottom: 0px;"></div>
+			<div>
+				<img src="images/6款蓝色医用口罩设计矢量图.jpg" width="700" height="700" style="float: left;">
+				<hr size="700" width="1" style="float: left;margin-left: 30px;margin-right: 30px;">
+				<img src="images/创意白色N95医用防护口罩矢量图.jpg" style="float: left;" width="700px" height="700px">
+			</div>
+		</div>
+		<div id="part5">
+			<div><img  id="virus" src="images/font-image_detail3-175-0-病毒简介.png" style="margin-left: -165px;margin-bottom: 0px;clear: both;"></div>
+			<div>
+				<div>
+					<video poster="images/蓝色新型冠状病毒矢量素材.jpg" style="width: 1000px;height: 542px;float: left;border: 3px solid rgb(45,45,45);"  controls="controls">
+						<source src="images/新冠病毒介绍公益系列动画.mp4"></source>
+					</video>
+				</div>
+					<div style="float: left;width: 450px;line-height: 30px;">
+						<div id="p_content_1" class="p_directory_flag" ><h1>什么是新型冠状病毒肺炎？</h1></div>
+	                    <div><ul><li><p>新型冠状病毒肺炎（Corona Virus Disease 2019，COVID-19）是由严重急性呼吸系统综合征冠状病毒2（severe acute respiratory syndrome coronavirus 2，SARS-CoV-2）感染后引起的一种急性呼吸道传染病。现已将该病纳入《中华人民共和国传染病防治法》规定的乙类传染病，并采取甲类传染病的预防、控制措施。</p><p></p></li><li><p>SARS-CoV-2是一种先前尚未在人类中发现的新型冠状病毒。</p><p></p></li><li><p>临床表现以发热、干咳为主，少数患者出现鼻塞、流涕、咽痛、肌痛和腹泻等表现，严重者逐渐出现呼吸困难等表现。</p><p></p></li><li><p>认为洛匹那韦/利托那韦对新型冠状病毒有一定疗效。相关疫苗以及抗病毒药物也正在紧锣密鼓的研制过程中。出现类似表现，应及时到医院进行检查和治疗。</p><p></p></li><li><p>病情严重者可出现急性呼吸窘迫综合征、脓毒症休克、难以纠正的代谢性酸中毒、凝血功能障碍和多脏器衰竭等，危及生命。</p><p></p></li><li><p>早发现、早治疗，多数患者预后良好，少数患者病情危重，有一定病死率。</p><p></p></li></ul></div>
+	                </div>
+				</div>
+			</div>
+			<div style="margin-top: 20px;margin-bottom:20px;clear: both;"><hr height="1" width="1480"
+			></div>
+			<div id="lastpart" style="width: 1480px;background-color: rgb(45,45,45);height: 50px;clear: both;margin:0px;">
+				<div id="footer">
+				<p>
+					<img src="images/gur-project-03.png">
+					<img src="images/gur-project-04.png">
+					<img src="images/gur-project-02.png">
+					<img src="images/gur-project-09.png">
+					<span id="foot">@211806352</span>
+						<a href="index404.html">版权说明</a>
+						<a href="index404.html">使用协议</a>
+						<a href="index404.html">网站地图</a>
+						<a href="index404.html">友情链接</a>
+						<a href="index404.html">联系我们</a>
+				</p>
+				</div>
+			</div>
+		</div>
+<script>
+	new Vue({
+		el: "#app",
+		data: function () {
+			return {
+				data:[
+					{class:"box_ul_li",href:"#",src:"images/1.jpg",name:"肺炎",text:"知识点1"},
+					{class:"box_ul_li on",href:"#",src:"images/2.jpg",name:"病毒",text:"知识点2"},
+					{class:"box_ul_li",href:"#",src:"images/3.jpg",name:"预防工具",text:"知识点3"},
+					{class:"box_ul_li",href:"#",src:"images/4.jpg",name:"防护装备",text:"知识点4"},
+					{class:"box_ul_li",href:"#",src:"images/5.jpg",name:"戴口罩",text:"知识点5"},
+				]
+			}
+		}
+	})
+	$(".box ul li").hover(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+	});
+</script>
+<script src="js/lrtk.js"></script>
+<script type="text/javascript" src="https://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+	(function() {
+	    var $backToTopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body"))
+	        .text($backToTopTxt).attr("title", $backToTopTxt).click(function() {
+	            $("html, body").animate({ scrollTop: 0 }, 120);
+	    }), $backToTopFun = function() {
+	        var st = $(document).scrollTop(), winh = $(window).height();
+	        (st > 0)? $backToTopEle.show(): $backToTopEle.hide();
+	        //IE6下的定位
+	        if (!window.XMLHttpRequest) {
+	            $backToTopEle.css("top", st + winh - 166);
+	        }
+	    };
+	    $(window).bind("scroll", $backToTopFun);
+	    $(function() { $backToTopFun(); });
+	})();
+</script>
+<script>
+			var nav=document.getElementById('guide');
+			var navTop=nav.offsetTop;
+			var pageHeight=700;
+			window.onscroll =function(){
+			var backTop=document.documentElement.scrollTop||document.body.scrollTop;
+				if (backTop>=navTop) {
+					nav.style.position="fixed";
+					nav.style.top="0";
+					nav.style.left="0";
+					nav.style.zIndex="9999";
+				}else{
+					nav.style.position="";
+				}
+			}
+</script>
+ <script language=Javascript> 
+  function time(){
+    //获得显示时间的div
+    t_div = document.getElementById('showtime');
+   var now=new Date()
+    //替换div内容 
+   t_div.innerHTML = "现在是"+now.getFullYear()
+    +"年"+(now.getMonth()+1)+"月"+now.getDate()
+    +"日"+now.getHours()+"时"+now.getMinutes()
+    +"分"+now.getSeconds()+"秒";
+    //等待一秒钟后调用time方法，由于settimeout在time方法内，所以可以无限调用
+   setTimeout(time,1000);
+  }
+</script>
+</body>
+</html>

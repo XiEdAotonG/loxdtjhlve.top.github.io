@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>register</title>
+	<link rel="stylesheet" href="css/register.css">
+	<script type="text/javascript" src="js/register.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body id="all">
+	<div class="reg_div">
+		<div class="reg_title_div">
+			<h2 class="reg_title">用户注册</h2>
+		</div>
+		<div class="input_div">
+			<form action="" class="reg_form">
+				<span>
+					用户名：
+				</span>
+				<input id="userName" type="text"/><br><br>
+				<span>
+					&nbsp;&nbsp;&nbsp;&nbsp;密码：
+				</span>
+				<input id="userPaw" type="password"/><br><br>
+				<span>
+					&nbsp;确认密码：
+				</span>
+				<input id="userPawC" type="password"/><br><br>
+				<input type="button" value="注册" id="submit" onclick="check()">
+				<div id="go_login"><a href="login.html" onclick="writeFile()">点此登陆</a></div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
